@@ -5,7 +5,7 @@ import { CiBookmark } from 'react-icons/ci';
 import { FaEye, FaRegStar, FaShareAlt } from 'react-icons/fa';
 
 const AllNews = ({ news }) => {
-    console.log("news nai", news);
+    // console.log("news nai", news);
     const { title, rating, others_info, total_view, thumbnail_url, details, author,image_url } = news;
 
     return (

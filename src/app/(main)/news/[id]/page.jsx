@@ -6,10 +6,15 @@ import React from 'react';
 import { CiBookmark } from 'react-icons/ci';
 import { FaEye, FaRegStar, FaShareAlt } from 'react-icons/fa';
 
+export const metadata = {
+  title: "News Portal -newsDetails",
+  description: "best news portal in bangladesh",
+};
+
 
 const NewsDetailsPage = async ({ params }) => {
     const { id } = await params;
-    console.log(id);
+    // console.log(id);
     const news = await getNewsDetailsById(id);
 
     const { title, rating, others_info, total_view, thumbnail_url, details, author, image_url } = news;

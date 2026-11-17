@@ -13,11 +13,11 @@ export const metadata = {
 
 const NewsCategoryPage = async ({ params }) => {
     const { id } = await params;
-    console.log(id);
+    // console.log(id);
 
     const categories = await getCategory();
     const allNews = await getNewsByCategoryId(id)
-    console.log(allNews);
+    // console.log(allNews);
     
 
     return (
